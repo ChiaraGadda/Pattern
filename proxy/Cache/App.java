@@ -15,7 +15,7 @@ class Service implements ServiceInterface {
 
 class Proxy implements ServiceInterface {
     private Service service;
-    private ArrayList<String> storage =new ArrayList<String>();
+    private ArrayList<String> storage = new ArrayList<String>();
 
     public Proxy(Service service) {
         this.service = service;
@@ -27,7 +27,7 @@ class Proxy implements ServiceInterface {
             service.add(str);
             System.out.println("Proxy: immagine caricata\n\n");
         }else{
-            System.out.println("Proxy: immagine non caricabile\n\n");
+            System.out.println("Proxy: immagine già caricata\n\n");
             return;
         }
     }
@@ -41,6 +41,6 @@ public class App {
         proxy.add("duce.gpj");
         proxy.add("dariomoccia.png");
         proxy.add("palletta.jpg");
-        proxy.add("duce.jpg");
+        proxy.add("duce.gpj");
     }
 }
