@@ -54,8 +54,9 @@ public class Main {
     Service service = new Service();
     Proxy proxy = new Proxy(service);
     System.out.println(proxy.somma(3, 2));
-    System.out.println(proxy.somma(3, 2));    System.out.println(proxy.sottrazzione(3, 2));  System.out.println(proxy.sottrazzione(3, 2));
-
-
+    System.out.println(proxy.somma(3, 2));    
+    System.out.println(proxy.sottrazzione(3, 2));  
+    System.out.println(proxy.sottrazzione(3, 2));
+    System.out.println(proxy.sottrazzione(3, 4));
   }
 }
